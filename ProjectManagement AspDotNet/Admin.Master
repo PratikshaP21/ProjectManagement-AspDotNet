@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="ProjectManagement_AspDotNet.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 94%;
+            height: 493px;
+            
+        }
+        .auto-style3 {
+            height: 235px;
+        }
+        .auto-style4 {
+            height: 41px;        
+        }
+        .auto-style5 {
+            width: 1181px;
+            height: 287px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style3">
+                    <img alt="" class="auto-style5" src="Content/Images/Admin%203.jpg" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style4">
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/All Project" Text="All Project" Value="All Project"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Assign Project" Text="Assign Project" Value="Assign Project"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Completed Project" Text="Completed Project" Value="Completed Project"></asp:MenuItem>
+                        </Items>
+                        <StaticMenuItemStyle BackColor="#3366FF" BorderColor="#00FFCC" BorderStyle="Groove" ForeColor="Black" HorizontalPadding="150px" ItemSpacing="20px" VerticalPadding="20px" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-color: white  ;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    <br />
+                </p>
+                <p property="og:image" resource="https://wallpapercave.com/wp/wp2912346.jpg">
+                </p>
+            </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        <div>
+        </div>
+    </form>
+</body>
+</html>

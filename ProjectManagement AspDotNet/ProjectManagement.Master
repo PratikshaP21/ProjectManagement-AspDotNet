@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ProjectManagement.master.cs" Inherits="ProjectManagement_AspDotNet.ProjectManagement" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style3 {
+            height: 254px;
+            width: 1176px
+        }
+        .auto-style5 {
+            width: 1176px;
+            background-color:aquamarine;
+        }
+        .auto-style6 {
+            width: 1169px;
+            height: 232px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style3">
+                    <img alt="" class="auto-style6" src="Content/Images/project%201.jpg" /></td>
+            </tr>
+            <tr>
+                <td class="auto-style5">
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" BackColor="Aqua" BorderColor="Red" Font-Bold="True" ForeColor="#3333FF">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/AboutUs.aspx" Text="AboutUs" Value="AboutUs"></asp:MenuItem>
+                            <asp:MenuItem  Text="Registration" Value="Registration">
+                                <asp:MenuItem NavigateUrl="~/Employee.aspx" Text="Employee" Value="Employee" ></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Project.aspx" Text="Project" Value="Project"> </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Login.aspx"  Text="Login" Value="Login"></asp:MenuItem>
+                        </Items>
+                        <StaticMenuItemStyle HorizontalPadding="130px" ItemSpacing="15px" BackColor="#3366FF" BorderColor="#66FFFF" Font-Bold="True" ForeColor="Black" VerticalPadding="20px" BorderStyle="Groove" />
+                        <StaticSelectedStyle HorizontalPadding="60px" ItemSpacing="10px" VerticalPadding="10px" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style5">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+&nbsp;<br />
+                </p>
+                <p>
+                    &nbsp;</p>
+            </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        <div>
+        </div>
+    </form>
+</body>
+</html>

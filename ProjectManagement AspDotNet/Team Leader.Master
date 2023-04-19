@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Team Leader.master.cs" Inherits="ProjectManagement_AspDotNet.Team_Leader2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 92%;
+            height: 373px;
+        }
+        .auto-style2 {
+            width: 1155px;
+            height: 268px;
+        }
+        .auto-style3 {
+            height: 258px;
+        }
+        .auto-style4 {
+            height: 43px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+    <table class="auto-style1">
+        <tr>
+            <td class="auto-style3">
+                <img alt="" class="auto-style2" src="Content/Images/Team%201.jpg" /></td>
+        </tr>
+        <tr>
+            <td class="auto-style4"></td>
+        </tr>
+        <tr>
+            <td>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>
